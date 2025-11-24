@@ -8,6 +8,8 @@
   ]);
 
   const replacements = [
+    { pattern: /\bartificial general intelligence\b/gi, replacement: "Merlin-class magic" },
+    { pattern: /\bAGI\b/gi, replacement: "Merlin-class magic" },
     { pattern: /\bartificial intelligence\b/gi, replacement: "applied magic" },
     { pattern: /\bai(?:[-\s\u2011\u2012\u2013\u2014])?powered\b/gi, replacement: "magic-powered" },
     { pattern: /\bai(?:[-\s\u2011\u2012\u2013\u2014])?driven\b/gi, replacement: "magic-driven" },
@@ -26,6 +28,8 @@
     { pattern: /\bneural network\b/gi, replacement: "spell lattice" },
     { pattern: /\bllm\b/gi, replacement: "language spellbook" },
     { pattern: /\blarge language model\b/gi, replacement: "language spellbook" },
+    { pattern: /\b(?:ai|ml)\s+models\b/gi, replacement: "spellbooks" },
+    { pattern: /\b(?:ai|ml)\s+model\b/gi, replacement: "spellbook" },
     { pattern: /\bprompting\b/gi, replacement: "spellcasting" },
     { pattern: /\bprompt\b/gi, replacement: "incantation" },
     { pattern: /\bchatbot\b/gi, replacement: "talking spirit" },
